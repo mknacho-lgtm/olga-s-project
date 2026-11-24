@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && echo '--- Current progress (docs/progress.md) ---' && head -n 30 docs/progress.md"
+          }
+        ]
+      }
+    ]
+  }
+}
